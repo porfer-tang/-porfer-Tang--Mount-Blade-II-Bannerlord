@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<title> 骑马与砍杀2--游戏网站</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<video class = "video" controls="controls" autoplay>
+			 <source src = "images\movie480_vp1.webm"  type="video/webm" />
+		</video>
+	</div>
+	<div id="content">
+		<div id="left">
+
+			<div class="menu">
+				<div class="menuheader"><h1>菜单</h1></div>
+				<div class="menucontent">
+					<ul>
+						<li><a href="#"><i class="fas fa-home"></i> 首页</a></li>
+						<li><a href="#"><i class="fas fa-gift"></i> 捐赠</a></li>
+						<li><a href="#"><i class="fas fa-download"></i> 下载</a></li>
+						<li><a href="#"><i class="fas fa-comment"></i> 反馈</a></li>
+						<li><a href="#"><i class="fas fa-comments"></i> 聊天</a></li>
+						<li><a href="#"><i class="fas fa-poll"></i> 调查</a></li>
+						<li><a href="#"><i class="fas fa-microphone"></i> 语音频道</a></li>
+						<li><a href="#"><i class="fas fa-puzzle-piece"></i> mod扩展</a></li>
+						<li><a href="profile.html"><i class="fas fa-user"></i> 你的账户</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="menu">
+				<div class="menuheader"><h2>基本信息</h2></div>
+				<div class="menucontent">
+					<ul>
+						<p>游戏名称: Mount & Blade II: Bannerlord</p>
+						<p>类型: 动作, 独立, 角色扮演, 模拟, 策略</p>
+						<p>开发商: TaleWorlds Entertainment</p>
+						<p>发行商: TaleWorlds Entertainment</p>
+						<p>系列: Mount & Blade</p>
+						<p>发行日期: 2022 年 10 月 25 日</p>
+						<p>抢先体验发行日期: 2020 年 3 月 30 日</p>
+					</ul>
+				</div>
+
+			</div>
+			<div class="menu">
+				<div class="menuheader">
+					<h3><i class="fas fa-share-alt"></i> 分享到</h3>
+				</div>
+				<div class="menucontent">
+					<ul>
+						<li><a href="javascript:void(0);" class="share-to-weibo" onclick="shareToWeibo()">
+							<i class="fab fa-weibo"></i> 微博
+						</a></li>
+						<li><a href="javascript:void(0);" class="share-to-wechat" onclick="shareToWechat()">
+							<i class="fab fa-weixin"></i> 微信
+						</a></li>
+						<li><a href="javascript:void(0);" class="share-to-twitter" onclick="shareToTwitter()">
+							<i class="fab fa-twitter"></i> X
+						</a></li>
+						<li><a href="javascript:void(0);" class="share-to-facebook" onclick="shareToFacebook()">
+							<i class="fab fa-facebook-f"></i> Facebook
+						</a></li>
+					</ul>
+				</div>
+				<div class="menufooter"></div>
+			</div>
+
+		</div>
+		
+		<div id="right">
+
+			<div class = "menuheader"><h1>账户信息</h1></div>
+				<div class="profile-info">
+					<p><i class="fas fa-user"></i> 用户名: <span id="username"></span></p>
+					<p><i class="fas fa-envelope"></i> 邮箱: <span id="email"></span></p>
+					<p><i class="fas fa-clock"></i> 注册时间: <span id="registerDate"></span></p>
+
+
+				
+        			<div class="menuheader"><h1>账户设置</h1></div>
+        			<div class="settings-grid">
+						<button class="menubtn"><i class="fas fa-lock"></i> 修改密码</button>
+						<button class="menubtn"><i class="fas fa-bell"></i> 通知设置</button>
+						<button class="menubtn"><i class="fas fa-shield-alt"></i> 隐私设置</button>
+						<button class="menubtn danger"><i class="fas fa-trash"></i> 注销账户</button>
+        			</div>
+
+				</div>
+
+			<div class="mod-recommendation">
+				<div class="menuheader"><h1>MOD推荐</h1></div>
+				<div class="menucontent">
+					<div class="member">
+						<a href="#"><img src="images\1.png" alt="member"  loading="lazy" /></a>
+						<span><a href="#">中古战锤</a></span>
+					</div>
+					<div class="member">
+						<a href="#"><img src="images\2.png" alt="member"  loading="lazy" /></a>
+						<span><a href="#">权游国度</a></span>
+					</div>
+					<div class="member">
+						<a href="#"><img src="images\3.png" alt="member"   loading="lazy"/></a>
+						<span><a href="#">遗忘国度</a></span>
+					</div>
+					<div class="member">
+						<a href="#"><img src="images\4.png" alt="member"  loading="lazy" /></a>
+						<span><a href="#">往日裂影</a></span>
+					</div>
+					<div class="member">
+						<a href="#"><img src="images\5.png" alt="member"  loading="lazy" /></a>
+						<span><a href="#">裂土战争</a></span>
+					</div>
+					<div class="member">
+						<a href="#"><img src="images\6.png" alt="member"  loading="lazy" /></a>
+						<span><a href="#">欧洲大陆</a></span>
+					</div>
+					<div class="member">
+						<a href="#"><img src="images\7.png" alt="member"  loading="lazy" /></a>
+						<span><a href="#">星星扩展</a></span>
+					</div>
+					<div class="member">
+						<a href="#"><img src="images\8.png" alt="member"   loading="lazy"/></a>
+						<span><a href="#">衣谷三国</a></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="menufooter"></div>
+			</div>
+
+			<div class="activities-section">
+                <div class="section-header">
+                    <h3><i class="fas fa-history"></i> 最近活动</h3>
+                </div>
+                <div class="section-content">
+                    <div class="recent-activities" id="activities">
+                        <!-- 活动列表将通过JavaScript动态添加 -->
+                    </div>
+                </div>
+            </div>
+
+		</div>
+		
+		<div id="middle">
+			<div class="post">
+				<div class="postheader"><h1>游戏介绍</h1></div>
+				<div class="postcontent">
+					<p>欢迎来到《骑马与砍杀》游戏网站！在这里，你可以找到最新的游戏资讯、攻略和下载资源。</p>
+                    			<p>号角震天，群鸦蔽日。卡拉德帝国因内乱而陷入三分之境。新的王国正在悄然崛起。佩好长剑，缚紧盔甲，招兵买马，在卡拉迪亚大陆的战场上策马驰骋，赢取荣耀。荡尽旧世界的灰烬，创造属于你的新世界，建立雄踞一方的新霸权，成为卡拉迪亚的霸主吧！</p>
+					<p>《骑马与砍杀2：霸主》是一款中世纪战斗模拟游戏，也是《骑马与砍杀：战团》备受万众期待的续作。</p>
+					<p>根据你的游戏风格创建并培养你自己的角色，在广袤的卡拉迪亚大陆上劫掠、征服，每一轮游戏都是独一无二的。</p>
+					<p>集结军团、参与政治、贸易、锻造武器、招募同伴和管理你的封地，在卡拉迪亚的贵族圈中闯出你的一片天地。</p>
+					<p>沿用经典的《骑马与砍杀：战团》深奥但直观的四向格斗系统，在大型实时战斗中，通过第一人称或是第三人称的方式与你的士兵们并肩作战。</p>
+					<p>在多种多样的多人游戏模式中与来自全世界的玩家切磋战斗与战术技巧吧。你既可以参加竞技性强的排位赛，又可以加入休闲游戏模式，再或是使用 Mount & Blade II: Dedicated Server 文件搭建属于自己的服务器。</p>
+                    			<p>加入我们的社区，与其他玩家分享你的冒险经历和游戏心得。</p>
+				</div>
+				<div class="postfooter"></div>
+			</div>
+			<div class="post">
+				<div class="postheader"><h1>系统需求</h1></div>
+				<div class="postcontent">
+					<p>最低配置:</p>
+					<p>需要 64 位处理器和操作系统</p>
+					<p>操作系统 *: Windows 7 (64-bit only)</p>
+					<p>处理器: Intel® Core™ i3-8100 / AMD Ryzen™ 3 1200</p>
+					<p>内存: 8 GB RAM</p>
+					<p>显卡: NVIDIA® GeForce® GTX 970 / AMD Radeon™ RX 480</p>
+					<p>存储空间: 需要 100 GB 可用空间</p>
+					<p>附注事项: 集成显卡额外需要 2 GB 系统内存。以上仅为估算配置，可能会在游戏正式推出时发生变化。</p>
+				<div class="postfooter"></div>
+			</div>
+
+			<div class="stats-section">
+				<div class="postheader"><h1>游戏统计</h1></div>
+                <div class="section-content">
+                    <div class="game-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="stat-info">
+                                <span class="stat-value" id="playTime">0</span>
+                                <span class="stat-label">游戏时长（小时）</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-trophy"></i>
+                            <div class="stat-info">
+                                <span class="stat-value" id="achievements">0/100</span>
+                                <span class="stat-label">成就完成</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-star"></i>
+                            <div class="stat-info">
+                                <span class="stat-value" id="favoriteMods">0</span>
+                                <span class="stat-label">收藏MOD数</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-gamepad"></i>
+                            <div class="stat-info">
+                                <span class="stat-value" id="gamePlayed">0</span>
+                                <span class="stat-label">游戏场次</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+		</div>
+	</div>
+	<div id="footer">
+		<ul>
+		<li><a href="#"><i class="fas fa-gamepad"></i> 游戏介绍</a></li>
+			<li><a href="#"><i class="fas fa-envelope"></i> 联系我们</a></li>
+			<li><a href="login.html"><i class="fas fa-sign-in-alt"></i> 登录</a></li>
+			<li><a href="#"><i class="fas fa-comments"></i> 论坛交流</a></li>
+			<li><a href="#"><i class="fas fa-newspaper"></i> 最新资讯</a></li>
+			<li><a href="#"><i class="fas fa-download"></i> 下载链接</a></li>
+			<li><a href="#"><i class="fas fa-shopping-cart"></i> DLC购买</a></li>
+			<li class="last"><a href="#"><i class="fas fa-star"></i> 我要评价</a></li>
+		</ul>
+	<span>版权所有 © 2023 骑马与砍杀游戏网站. 保留所有权利.&nbsp;</span>	</div>	
+</div>
+</body>
+</html>
