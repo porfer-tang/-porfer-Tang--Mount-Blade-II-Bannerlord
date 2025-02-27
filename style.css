@@ -1,0 +1,364 @@
+body {
+	background-image:url(images/background.gif);
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+	background-repeat: repeat-x;
+	background-color: #000000;
+}
+* {margin: 0px;padding: 0px;}
+p {
+	padding: 10px 10px 10px 20px;
+	display:block;
+	color:#525757;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold
+}
+a {
+	color:#6b7272;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+#container {
+	margin: 0px auto;
+	text-align: left;
+	width: 1200px;
+}
+#header{
+	height:400px;
+	width:1200px;
+	background-image:url(images/header.jpg);
+	background-repeat: no-repeat;
+}
+#content{
+}
+#left{
+	width:240px;
+	float:left;
+	margin-right:20px;
+}
+#middle{
+	margin-left:260px;
+	margin-right:260px;
+	width:660px;
+}
+#right{
+	width:240px;
+	float:right;
+	margin-left:20px;
+}
+
+/********************* menu ****************************/
+.menuheader{
+	width:240px;
+	height:37px;
+	background-image:url(images/menutop.gif);
+	display:block;
+}
+.menucontent{
+	width:240px;
+	background-image:url(images/menumiddle.gif);
+	padding-top:10px;
+	background-repeat: repeat-y;
+}
+.menuheader h3{
+	padding: 10px 0px 0px 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+.menufooter{
+	width:240px;
+	height:15px;
+	background-image:url(images/menubottom.gif);
+	display:block;
+}
+.postheader,.menuheader{
+	color:#CCCCCC;
+	text-transform: uppercase;
+}
+
+//菜单悬停效果
+.menu ul li a:hover {
+    color: #FFFFFF;
+    background-color: #333333;
+    transition: all 0.3s ease;
+}
+/********************* post ****************************/
+.post{
+	margin-bottom:20px;
+}
+.postheader{
+	background-image:url(images/posttop.gif);
+	display:block;
+	width:660px;
+	height:33px;
+}
+.postheader h1{
+	padding: 7px 0px 0px 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.postcontent{
+	background-image:url(images/postmiddle.gif);
+	background-repeat: repeat-y;
+	padding: 20px 0px;
+	width:660px;
+}
+.postfooter{
+	background-image:url(images/postbottom.gif);
+	background-repeat: no-repeat;
+	display:block;
+	width:660px;
+	height:15px;
+}
+/********************* header ****************************/
+#header{
+	position:relative;
+	height: 400px;
+  	width: 1200px;
+    	background-repeat: no-repeat;
+}
+#header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* 根据需要调整宽度 */
+    height: 100%; /* 根据需要调整高度 */
+    object-fit: cover; /* 确保视频填充整个区域 */
+}
+#header ul{
+	position:absolute;
+	top:250px;
+	display:block;
+	left:190px;
+}
+#header ul li{
+	display:inline;
+	text-align:center;
+	margin:auto;
+	width:auto;
+	border-right: 1px solid #6b7272;	
+}
+.last{
+	border-right: 0px none #6b7272 !important;
+}
+#header ul li a{
+	display:inline;
+	text-align:center;
+	text-decoration:none;
+	padding: 0px 10px;
+	text-transform: uppercase;
+}
+#header ul li a:hover{
+	text-decoration:underline;
+}
+/********************* footer ****************************/
+#footer{
+	width:1200px;
+	margin-top:20px;
+	clear:both;
+}
+#footer ul{
+	display:block;
+	margin-left:190px;
+}
+#footer ul li{
+	display:inline;
+	text-align:center;
+	margin:auto;
+	width:auto;
+	border-right: 1px solid #6b7272;	
+}
+
+#footer ul li a{
+	display:inline;
+	text-align:center;
+	text-decoration:none;
+	padding: 0px 10px;
+	text-transform: uppercase;
+}
+#footer ul li a:hover{
+	text-decoration:underline;
+}
+#footer span{
+	color:#525757;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-align:center;
+	width:850px;
+	display:block;
+	padding: 15px 0px;
+}
+/********************* menu members ****************************/
+.menu ul{
+	list-style-position: inside;
+	list-style-type: disc;
+	padding: 0px 0px 0px 20px;
+	color:#666666;
+}
+.menu ul li{
+	padding-top: 5px;
+	color:#666666;
+}
+.menu ul li a{
+	text-decoration:none;
+	padding: 0px;
+	text-transform: uppercase;
+}
+.menu ul li a:hover{
+	text-decoration:underline;
+	text-transform: uppercase;
+}
+.member{
+	display:inline;
+	float:left;
+	margin:10px;
+	width:100px;
+	text-align:center;
+}
+.member span{
+	display:block;
+	text-align:center;
+	padding: 2px 0px 13px 0px;
+	text-transform: uppercase;
+
+}
+.member img{
+	width:90px;
+	height:85px;
+	border: solid 2px #999999;	
+
+}
+.clear{
+	clear:both;
+}
+.menucontent p {
+    padding: 8px 15px;
+    line-height: 1.5;
+    font-size: 13px;
+}
+.social-share {
+    padding: 15px;
+    margin: 10px 0;
+}
+.social-share ul li {
+    margin: 12px 0;
+}
+
+
+
+p {
+    line-height: 1.0;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+    #left, #right {
+        display: none; /* 在小屏幕上隐藏侧边栏 */
+    }
+    #middle {
+        margin: 0 20px; /* 调整中间区域的宽度 */
+    }
+}
+
+/********************* 游戏统计区域 ****************************/
+.game-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 20px;
+    background: rgba(102, 102, 102, 0.1);
+    border-radius: 5px;
+}
+
+.stat-item i {
+    font-size: 24px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stat-value {
+    font-size: 24px;
+    color: #CCCCCC;
+    font-weight: bold;
+}
+
+.stat-label {
+    color: #525757;
+    font-size: 12px;
+}
+
+
+/* 账户设置区域 */
+.settings-section {
+    margin-bottom: 20px;
+}
+
+.settings-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.setting-btn {
+    padding: 15px;
+    background: #666666;
+    color: #CCCCCC;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.setting-btn:hover {
+    background: #808080;
+}
+
+.setting-btn.danger {
+    background: #8B0000;
+}
+
+.setting-btn.danger:hover {
+    background: #A52A2A;
+}
+
+
+/* 最近活动区域 */
+.recent-activities {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #666666;
+    color: #CCCCCC;
+}
